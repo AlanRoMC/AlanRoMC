@@ -18,5 +18,7 @@ from django.urls import path, include
 from Apps.Usuarios import views as views_usuarios
 
 urlpatterns = [
-    path('function', views_usuarios.renderizado, name='usuarios'),
+    path('', views_usuarios.loginn, name='home'),
+    path('login', views_usuarios.loginn, name='login'),
+    path('register', views_usuarios.register, name='register')
 ]
