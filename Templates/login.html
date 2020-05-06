@@ -10,14 +10,14 @@
     <div class="container">
 
         <div class="container">
-            <h4 class="text-center">Inicio de sesion UAQuify</h4>
+            <img src="C:/Users/Alanm/Documents/Padre/AlfasClass/Alfas/Static/img/UAQUIFY.png" alt="" width="200px" height="65px">
         </div>
         
         <div class="container">
             
             {{form.non_field_errors}}
             
-            <form action="#" method="POST">
+            <form action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
 
                 {% for field in form %}
@@ -30,6 +30,10 @@
                 <input type="submit" value="Iniciar sesion" class="btn btn-primary">
             
             </form>
+            <br>
+                <a href="{% url 'register' %}">
+                    <button class="btn btn-primary">No tengo cuenta</button>    
+                </a>
         </div>
 
     </div>
