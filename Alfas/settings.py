@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'Alfas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djgango',
+        'NAME': 'uaquify',
         'HOST': 'localhost',
         'USER':'root',
         'PASSWORD':'',
@@ -129,3 +129,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'Static'),)
+
+AUTH_USER_MODEL='Usuarios.User'
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')

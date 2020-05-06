@@ -21,5 +21,6 @@ from Apps.Reproduccion import urls as urls_reproduccion
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reproduccion', include('Apps.Reproduccion.urls')),
-    path('', include('Apps.Usuarios.urls'))
+    path('', include('Apps.Usuarios.urls')),
+    path('artista/', include('Apps.Artista.urls'))
 ]
